@@ -23,6 +23,6 @@ public class RawUdpSocketClient {
                 break;
             }
         }
-        pcapHandle = networkInterface.openLive(65536, PcapNetworkInterface.PromiscuousMode.PROMISCUOUS, 50);
+        pcapHandle = networkInterface.openLive(65536, PcapNetworkInterface.PromiscuousMode.PROMISCUOUS, 100);
     }
 }

@@ -43,8 +43,8 @@ public  class PacketCreator {
         byte[] UDPData = udpPayload.getRawData();
 
         // Создание IP заголовка
-        Inet4Address srcIp = (Inet4Address) InetAddress.getByName("10.19.116.19");
-        Inet4Address dstIp = (Inet4Address) InetAddress.getByName("10.19.116.19");
+        Inet4Address srcIp = (Inet4Address) InetAddress.getByName("176.192.251.248");
+        Inet4Address dstIp = (Inet4Address) InetAddress.getByName("176.192.251.248");
 
         IpV4Packet.Builder ipBuilder = new IpV4Packet.Builder()
                 .version(IpVersion.IPV4)

@@ -77,7 +77,7 @@ public class AgentDetector implements AgentDetectorInterface {
                     for (AIDDataList aidDataList : AIDList) {
                         result.add(new AID(aidDataList.getName(), aidDataList.isIsguid()));
                     }
-                    System.out.println(result);
+                    System.out.println(getAgent().getLocalName() + " " + result);
                 },
                 1000,1000, TimeUnit.MILLISECONDS);
 
